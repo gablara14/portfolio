@@ -10,7 +10,11 @@ const Grid: React.FC<GridProps> = ({ cards }) => {
     
     const renderCards = (cards: CardProps[]) => {
         return cards.map(el => {
-            if (el.link) return <Card title={el.title} description={el.description} href={el.link} />
+            if (el.link) {
+                if (el.date) return <Card title={el.title} description={el.description} href={el.link} date={el.date} />
+                return <Card title={el.title} description={el.description} href={el.link} />
+            } 
+            if (el.date) return <Card title={el.title} description={el.description} href={el.href} date={el.date} />
           return <Card title={el.title} description={el.description} href={el.href} />
         })
       }

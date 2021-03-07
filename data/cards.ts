@@ -1,20 +1,4 @@
-import { CardProps } from './components/Card'
-
-// export interface Course {
-//     name: string;
-//     url: string;
-//     hours: number;
-    
-// }
-
-interface SEO {
-    title: string;
-    description: string
-}
-
-///////////////////////////////////////////////
-///////// HOME /////////////////////////////
-//////////////////////////////////////////////
+import { CardProps } from '../components/Card'
 
 export const HomeCards: CardProps[] = [
     {
@@ -34,17 +18,10 @@ export const HomeCards: CardProps[] = [
     },
     {
       title: 'Medium',
-      description: 'Veja as minhas publicações sobre AI e Machine Learning no Medium',
+      description: 'Veja todos os artigos que já publiquei no Medium',
       href: 'https://medium.com/@gabrielrlara'
     }
 ]
-
-export const HomeSEO: SEO = {
-    title: 'Gabriel Lara',
-    description: 'JavaScript/Typescript Full-Stack Developer'
-}
-
-
 
 ///////////////////////////////////////////////
 ///////// CV ///////////////////////////////////
@@ -70,21 +47,24 @@ export const CVCards: CardProps[] = [
         title: 'Habilidades e Idiomas',
         description: '',
         link: '/cv/skills'
+    },
+    {
+        title: 'Reward & Recognition',
+        description: '',
+        link: '/cv/rewards'
     }
 ]
 
-
-
-
-export const ExperienceSEO: SEO = {
-    title: 'Experiência Profissional',
-    description: ''
-}
-
-export const CoursesSEO: SEO = {
-    title: 'Cursos e Formação',
-    description: "Cursando Administração - Universidade Presbiteriana Mackenzie, de agosto de 2018 a junho de 2022, São Paulo, SP"
-}
+export const RewardsCards: CardProps[] = [
+    {
+        title: 'Viagem aos Estados Unidos',
+        description: 'Viagem aos Estados Unidos com base no cumprimento de metas da empresa, 2018'
+    },
+    {
+        title: 'Viagem à Bahamas',
+        description: 'Viagem ao Atlantis Paradise Island Resort Bahamas com base no cumprimento de metas da empresa, 2019'
+    },
+]
 
 
 export const CourseCards: CardProps[] = [
@@ -146,12 +126,6 @@ export const CourseCards: CardProps[] = [
 ]
 
 
-export const SkilsSEO: SEO = {
-    title: 'Habilidades e Idiomas',
-    description: "Habilidades e Idiomas"
-}
-
-
 
 export const CertificatesCards: CardProps[] = [
     {
@@ -165,13 +139,55 @@ export const CertificatesCards: CardProps[] = [
 export const ExperienceCards: CardProps[] = [
     {
       title: 'Founder & CEO - GLA ECOMMERCE',
-      description:  'Fundou e administrou uma empresa que gerou mais de R$1.5 milhões de faturamento em poucos meses.'
+      description:  'Fundou e administrou uma empresa que gerou mais de R$1.5 milhões de faturamento em poucos meses.',
+      link: '/cv/experience/gla',
+      date: 'Julho 2019 — Novembro 2020'
     },
     {
         title: 'Autônomo - Jeunesse Global',
-        description:  'Treinou e liderou uma equipe que alcançou 1100 pessoas.'
+        description:  'Treinou e liderou uma equipe que alcançou 1100 pessoas.',
+        link: '/cv/experience/jns',
+        date: 'Julho 2017 — Março 2019'
     }
 ]
+
+export const GLACards: CardProps[] = [
+    {
+        title: 'Desenvolvimento completo do E-commerce (Front-End + Back-End)',
+        description:  ''
+    },
+    {
+        title: 'SEO',
+        description:  ''
+    },
+    {
+        title: 'Planejamento Estratégico',
+        description:  ''
+    },
+    {
+        title: 'Gerenciamento de Tráfego Pago',
+        description:  'Facebook e Instagram ads, Google e Youtube ads, Taboola etc..'
+    },
+    {
+        title: 'Monitoramento e contato com fornecedor estrangeiro (China)',
+        description:  'Facebook e Instagram ads, Google e Youtube ads, Taboola etc..'
+    }
+]
+
+export const JNSCARDS: CardProps[] = [
+    {
+      title: '',
+      description:  'Essa experiência foi fundamental no desenvolvimento das seguintes habilidades: venda, liderança e oratória.'
+    }
+]
+
+
+
+
+
+
+
+
 
 export const SkillsCards: CardProps[] = [
     {
@@ -205,21 +221,6 @@ export const LanguageCards: CardProps[] = [
         description: 'Intermediário'
     }
 ]
-
-export const LanguageSEO: SEO = {
-    title: 'Idiomas',
-    description: ''
-}
-
-export const SoftSkillsSEO: SEO = {
-    title: 'Soft Skills',
-    description: ''
-}
-export const HardSkillsSEO: SEO = {
-    title: 'Hard Skills',
-    description: ''
-}
-
 
 
 export const SoftSkillsCards: CardProps[] = [
@@ -291,7 +292,7 @@ export const HardSkillsCards: CardProps[] = [
         description: ''
     },
     {
-        title: 'Ciência de daados',
+        title: 'Ciência de dados',
         description: ''
     },
     {

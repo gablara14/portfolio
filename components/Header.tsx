@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({title, description, imageSrc}) => {
                 {title}
             </h1>
             <p className={headerStyles.description}>
-                {description}
+               {description}
             </p>
         </>
     )

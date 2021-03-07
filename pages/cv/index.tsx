@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header'
 import Grid from '../../components/Grid'
-import { CVCards } from '../../data'
+import { CVCards } from '../../data/cards'
 
 const CV: React.FC = () => {
 

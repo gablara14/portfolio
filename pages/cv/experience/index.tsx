@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../../components/Header'
-import Grid from '../../components/Grid'
-import { ExperienceSEO, ExperienceCards } from '../../data'
+import Header from '../../../components/Header'
+import Grid from '../../../components/Grid'
+import { ExperienceSEO, ExperienceCards } from '../../../data'
 
 const CV: React.FC = () => {
 
