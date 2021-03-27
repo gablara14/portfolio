@@ -105,6 +105,12 @@ export const CourseCards: CardProps[] = [
       "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp",
   },
   {
+    title: "Django with React | An Ecommerce Website",
+    description: "18 horas, Udemy",
+    href:
+      "https://www.udemy.com/course/django-with-react-an-ecommerce-website/",
+  },
+  {
     title: "Método Cosmos com Pedro Albuquerque",
     description: "10 horas, TradersClub",
     href: "https://tc.com.br/store/cursos/metodo-cosmos",
@@ -269,6 +275,10 @@ export const HardSkillsCards: CardProps[] = [
     description: "",
   },
   {
+    title: "Typescript",
+    description: "",
+  },
+  {
     title: "React JS",
     description: "",
   },
@@ -277,7 +287,11 @@ export const HardSkillsCards: CardProps[] = [
     description: "",
   },
   {
-    title: "NodeJS",
+    title: "Node.js",
+    description: "",
+  },
+  {
+    title: "Next.js",
     description: "",
   },
   {
@@ -297,7 +311,11 @@ export const HardSkillsCards: CardProps[] = [
     description: "",
   },
   {
-    title: "Machine Learning",
+    title: "Python",
+    description: "",
+  },
+  {
+    title: "Django",
     description: "",
   },
   {

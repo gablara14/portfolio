@@ -6,6 +6,7 @@ interface HeaderProps {
   description: string;
   imageSrc?: string;
   backLink?: string;
+  subTitle?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -13,6 +14,7 @@ const Header: React.FC<HeaderProps> = ({
   description,
   imageSrc,
   backLink,
+  subTitle,
 }) => {
   return (
     <>
@@ -27,6 +29,9 @@ const Header: React.FC<HeaderProps> = ({
       {imageSrc ? <img src={imageSrc} className={headerStyles.myimage} /> : ""}
       <div className={headerStyles.seoContainer}>
         <h1 className={headerStyles.title}>{title}</h1>
+        {subTitle ? (
+          <h2 className={headerStyles.subTitle}>{subTitle}</h2>
+        ) : null}
         <p className={headerStyles.description}>{description}</p>
       </div>
     </>

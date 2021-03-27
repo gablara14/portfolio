@@ -27,7 +27,8 @@
   cursor: pointer;
 }
 .title,
-.description {
+.description,
+.subTitle {
   text-align: center;
   padding: 0px 1rem;
 }

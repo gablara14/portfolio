@@ -9,6 +9,7 @@ const CV: React.FC = () => {
       <Header
         title={GLASEO.title}
         description={GLASEO.description}
+        subTitle={GLASEO.subTitle}
         backLink="/cv/experience"
       />
       <Grid cards={GLACards} />
