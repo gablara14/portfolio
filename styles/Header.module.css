@@ -19,7 +19,13 @@
 .seoContainer {
   max-width: 800px;
 }
-
+.backButtonContainer {
+  display: flex;
+  width: 100%;
+}
+.backButton {
+  cursor: pointer;
+}
 .title,
 .description {
   text-align: center;
